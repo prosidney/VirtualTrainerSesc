@@ -66,4 +66,15 @@
 			</list>
 		</property>
 	</bean>
+	
+	<!-- 
+	${db.migracao.giss1.schema} 
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+		<list>
+				<value>file:${JBOSS_HOME}${file.separator}server${file.separator}${jboss.server.name}${file.separator}conf${file.separator}databasepoolMigracao.properties</value>
+			</list>
+		</property>
+	</bean>
+	-->
 </beans>
