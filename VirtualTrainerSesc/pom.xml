@@ -4,7 +4,7 @@
   <groupId>br.com.sesc</groupId>
   <artifactId>virtual-trainer-sesc</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>gym Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
