@@ -16,14 +16,14 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         
 		<!-- Le styles -->
-		<link href="/gym/css/bootstrap.css" rel="stylesheet">
+		<link href="/VirtualTrainerSesc/css/bootstrap.css" rel="stylesheet">
 		<style type="text/css">
 		  body {
 		    padding-top: 60px;
 		    padding-bottom: 40px;
 		  }
 		</style>
-		<link href="/gym/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="/VirtualTrainerSesc/css/bootstrap-responsive.css" rel="stylesheet">
 		
 		<!-- Le fav and touch icons -->
 		<link rel="shortcut icon" href="../assets/ico/favicon.ico">
@@ -38,7 +38,7 @@
         <title>${title}</title>
  
         <!-- Essential scripts -->
-        <script type="text/javascript" src="/gym/js/query.js"></script>
+        <script type="text/javascript" src="/VirtualTrainerSesc/js/query.js"></script>
  
         <!-- Process the given input fragment -->
         <jsp:invoke fragment="extraHeader"/>
@@ -62,19 +62,19 @@
         <!-- Le javascript
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="/gym/js/bootstrap.js"></script>
-	    <script src="/gym/js/jquery.js"></script>
-	    <script src="/gym/js/bootstrap-transition.js"></script>
-	    <script src="/gym/js/bootstrap-alert.js"></script>
-	    <script src="/gym/js/bootstrap-modal.js"></script>
-	    <script src="/gym/js/bootstrap-dropdown.js"></script>
-	    <script src="/gym/js/bootstrap-scrollspy.js"></script>
-	    <script src="/gym/js/bootstrap-tab.js"></script>
-	    <script src="/gym/js/bootstrap-tooltip.js"></script>
-	    <script src="/gym/js/bootstrap-popover.js"></script>
-	    <script src="/gym/js/bootstrap-button.js"></script>
-	    <script src="/gym/js/bootstrap-collapse.js"></script>
-	    <script src="/gym/js/bootstrap-carousel.js"></script>
-	    <script src="/gym/js/bootstrap-typeahead.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap.js"></script>
+	    <script src="/VirtualTrainerSesc/js/jquery.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-transition.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-alert.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-modal.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-dropdown.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-scrollspy.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-tab.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-tooltip.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-popover.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-button.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-collapse.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-carousel.js"></script>
+	    <script src="/VirtualTrainerSesc/js/bootstrap-typeahead.js"></script>
     </body>
 </html>

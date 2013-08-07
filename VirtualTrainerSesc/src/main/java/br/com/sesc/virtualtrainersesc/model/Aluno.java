@@ -1,10 +1,18 @@
 package br.com.sesc.virtualtrainersesc.model;
 
 import java.io.Serializable;
-import javax.persistence.*;
-
 import java.math.BigDecimal;
 import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 
 /**
@@ -27,7 +35,9 @@ public class Aluno implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private int matricula;
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "alu")
+	@SequenceGenerator(name = "alu", sequenceName = "aluno_id_seq",allocationSize=1) 
+	private Integer matricula;
 
 	private int idade;
 
@@ -44,11 +54,11 @@ public class Aluno implements Serializable {
 	public Aluno() {
 	}
 
-	public int getMatricula() {
+	public Integer getMatricula() {
 		return this.matricula;
 	}
 
-	public void setMatricula(int matricula) {
+	public void setMatricula(Integer matricula) {
 		this.matricula = matricula;
 	}
 

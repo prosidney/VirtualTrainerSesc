@@ -6,7 +6,7 @@
         <center>
 			<table class="table table-hover" style="width: 50%">
 				<tr>
-					<th colspan="7" style="text-align: center;" style="width: 80%"><c:out value="Exercicios" /></th>
+					<th colspan="7" style="text-align: center;" style="width: 80%"><c:out value="Exercicios do ${treino.nome}" /></th>
 				</tr>
 				<tr>
 					<th><c:out value="Equipamento" /></th>
@@ -22,15 +22,12 @@
 						<td><c:out value="${exercicio.musculatura}" /></td>
 						<td><c:out value="${exercicio.qualidade}" /></td>
 						<td>
-							<a class="btn btn-primary" href="
-															<c:url value="editAparelho.do">  
-	        													<c:param name="aparelhoId" value="${treino.id}"/>  
-	     													</c:url> 
-															"><i class="icon-user icon-white"></i></a>						
+							<a class="btn btn-primary" href="#" onclick="window.alert('Trial version')"><i class="icon-edit icon-white"></i></a>						
 						</td>
 					</tr>
 				</c:forEach>
 			</table>
+			<a class="btn btn-primary" href="<c:url value="${treino.id}/add"/>"><i class="icon-plus-sign icon-white"></i> </a>
 		</center>        
     </jsp:body>
 </layout:page>

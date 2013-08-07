@@ -1,8 +1,15 @@
 package br.com.sesc.virtualtrainersesc.model;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Time;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 
 /**
@@ -15,7 +22,9 @@ public class Academia implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private int id;
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "acad")
+	@SequenceGenerator(name = "acad", sequenceName = "academia_id_seq",allocationSize=1)    
+	private Integer id;
 
 	@Column(name="capacidade_total")
 	private int capacidadeTotal;
@@ -31,11 +40,11 @@ public class Academia implements Serializable {
 	public Academia() {
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

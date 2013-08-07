@@ -87,17 +87,20 @@ public class RestMobileController {
 	
 	@Transactional
 	@RequestMapping(value="/mobile/exercicios/{treinoId}/checkin", method=RequestMethod.GET)
-	public @ResponseBody String checkInTreino(@PathVariable("treinoId") Integer treinoId, Model model) {
-		
+	public @ResponseBody JsonReturn checkInTreino(@PathVariable("treinoId") Integer treinoId, Model model) {
 		Treino treino = treinoDao.findById(treinoId);
+		
+		JsonReturn retorno = new JsonReturn();
 		
 		if(treino.getQtde() < treino.getQtdeTotal()){
 			treino.setQtde(treino.getQtde()+1);
 			
-			return "Checkin realizado com sucesso";
+			retorno.setData("Checkin realizado com sucesso");
+			
+		} else{
+			retorno.setData("Nao e possivel fazer checkin, objetivo concluido, procure seu treinador para maiores detalhes.");
 		}
-
-		return "Nao e possivel fazer checkin, objetivo concluido, procure seu treinador para maiores detalhes.";
+		return retorno;
 	}
 	
 	@Transactional(readOnly=true)
@@ -114,6 +117,7 @@ public class RestMobileController {
 			treinoClone.setId(treino.getId());
 			treinoClone.setNome(treino.getNome());
 			treinoClone.setQtde(treino.getQtde());
+			treinoClone.setQtdeTotal(treino.getQtdeTotal());
 			
 			treinosReturn.add(treinoClone);
 		}
