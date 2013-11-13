@@ -16,14 +16,14 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         
 		<!-- Le styles -->
-		<link href="/VirtualTrainerSesc/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/bootstrap.css" rel="stylesheet">
 		<style type="text/css">
 		  body {
 		    padding-top: 60px;
 		    padding-bottom: 40px;
 		  }
 		</style>
-		<link href="/VirtualTrainerSesc/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="/css/bootstrap-responsive.css" rel="stylesheet">
 		
 		<!-- Le fav and touch icons -->
 		<link rel="shortcut icon" href="../assets/ico/favicon.ico">
@@ -38,7 +38,7 @@
         <title>${title}</title>
  
         <!-- Essential scripts -->
-        <script type="text/javascript" src="/VirtualTrainerSesc/js/query.js"></script>
+        <script type="text/javascript" src="/js/query.js"></script>
  
         <!-- Process the given input fragment -->
         <jsp:invoke fragment="extraHeader"/>
@@ -62,19 +62,19 @@
         <!-- Le javascript
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="/VirtualTrainerSesc/js/bootstrap.js"></script>
-	    <script src="/VirtualTrainerSesc/js/jquery.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-transition.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-alert.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-modal.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-dropdown.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-scrollspy.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-tab.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-tooltip.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-popover.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-button.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-collapse.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-carousel.js"></script>
-	    <script src="/VirtualTrainerSesc/js/bootstrap-typeahead.js"></script>
+	    <script src="/js/bootstrap.js"></script>
+	    <script src="/js/jquery.js"></script>
+	    <script src="/js/bootstrap-transition.js"></script>
+	    <script src="/js/bootstrap-alert.js"></script>
+	    <script src="/js/bootstrap-modal.js"></script>
+	    <script src="/js/bootstrap-dropdown.js"></script>
+	    <script src="/js/bootstrap-scrollspy.js"></script>
+	    <script src="/js/bootstrap-tab.js"></script>
+	    <script src="/js/bootstrap-tooltip.js"></script>
+	    <script src="/js/bootstrap-popover.js"></script>
+	    <script src="/js/bootstrap-button.js"></script>
+	    <script src="/js/bootstrap-collapse.js"></script>
+	    <script src="/js/bootstrap-carousel.js"></script>
+	    <script src="/js/bootstrap-typeahead.js"></script>
     </body>
 </html>
