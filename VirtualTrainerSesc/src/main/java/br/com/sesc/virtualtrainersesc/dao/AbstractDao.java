@@ -32,7 +32,7 @@ public abstract class AbstractDao<T> implements GenericDao<T>{
 
 	public T save(T instance){
 		log.info("inserindo dados na tabela " + typeClass.getName());
-		sessionFactory.getCurrentSession().saveOrUpdate(instance);
+		sessionFactory.getCurrentSession().merge(instance);
 		return instance;		
 	}
 

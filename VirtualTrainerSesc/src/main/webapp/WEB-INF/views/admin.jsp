@@ -26,7 +26,13 @@
 						</td>
 					</tr>
 				</c:forEach>
+				<tr>
+					<td colspan="7" style="text-align: center;" style="width: 80%">
+						<a class="btn btn-primary" href="<c:url value="addClient.do"/>"><i class="icon-plus-sign icon-white"></i> </a>						
+					</td>						
+				</tr>
 			</table>
+			
 		</center>        
     </jsp:body>
 </layout:page>
